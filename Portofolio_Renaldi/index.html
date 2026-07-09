@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Renaldi Deva Andrianto — Mahasiswa Teknologi Informasi Universitas Jember, berfokus pada Programming, Robotics, IoT, dan Desain Grafis.">
+  <title>Renaldi Deva Andrianto — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =================== NAVBAR =================== -->
+  <header id="header">
+    <nav class="navbar">
+        Renalddva<span class="logo-dot">.</span>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"        class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about"       class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#education"   class="nav-link" id="nav-education">Pendidikan</a></li>
+        <li><a href="#experience"  class="nav-link" id="nav-experience">Pengalaman</a></li>
+        <li><a href="#skills"      class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#portfolio"   class="nav-link" id="nav-portfolio">Portfolio</a></li>
+        <li><a href="#certificates" class="nav-link" id="nav-certificates">Sertifikat</a></li>
+        <li><a href="#contact"     class="nav-link" id="nav-contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-name">Renaldi Deva<br><span class="name-accent">Andrianto</span></h1>
+        <p class="hero-role">Mahasiswa Teknologi Informasi &mdash; Universitas Jember</p>
+        <p class="hero-tagline">
+          <span class="tagline-prefix">Saya suka </span>
+          <span class="typed-text" id="typed-text"></span>
+          <span class="cursor-blink">|</span>
+        </p>
+        <div class="hero-buttons">
+          <a href="Assets/CV_RENALDI%20DEVA%20ANDRIANTO.pdf" download class="btn btn-primary" id="btn-download-cv">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline" id="btn-contact-me">Hubungi Saya</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/renaldeva" target="_blank" rel="noopener" class="social-icon" id="social-github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.72.08-.71.08-.71 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.72-1.54-2.56-.29-5.26-1.28-5.26-5.71 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.07 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.6.24 2.78.12 3.07.74.81 1.18 1.84 1.18 3.1 0 4.44-2.71 5.42-5.28 5.7.41.36.77 1.08.77 2.18 0 1.58-.01 2.85-.01 3.24 0 .31.21.67.8.55A10.99 10.99 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/renaldidevaandrianto" target="_blank" rel="noopener" class="social-icon" id="social-linkedin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M8.34 17.34V10.66H5.67V17.34H8.34M7 9.5A1.34 1.34 0 1 0 7 6.82A1.34 1.34 0 0 0 7 9.5M18.33 17.34V13.83C18.33 11.65 17.71 10.5 15.73 10.5C14.55 10.5 13.8 11.15 13.5 11.73H13.47V10.66H10.9V17.34H13.57V14.12C13.57 13.12 13.74 12.15 14.95 12.15C16.15 12.15 16.17 13.26 16.17 14.18V17.34H18.33Z"/></svg>
+          </a>
+          <a href="https://instagram.com/renalddva" target="_blank" rel="noopener" class="social-icon" id="social-instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2m0-2C3.47 0 0 3.47 0 7.75v8.5C0 20.53 3.47 24 7.75 24h8.5C20.53 24 24 20.53 24 16.25v-8.5C24 3.47 20.53 0 16.25 0h-8.5Z"/><path d="M12 7.25A4.75 4.75 0 1 1 7.25 12 4.76 4.76 0 0 1 12 7.25m0-2A6.75 6.75 0 1 0 18.75 12 6.76 6.76 0 0 0 12 5.25Z"/><circle cx="18.25" cy="5.75" r="1.25"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-img-wrapper">
+        <div class="hero-img-glow"></div>
+        <div class="hero-img-ring"></div>
+        <img src="Assets/profil.jpg" alt="Foto Profil Renaldi Deva Andrianto" class="hero-img" id="hero-profile-img">
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" id="scroll-indicator" aria-label="Scroll ke bawah">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- =================== ABOUT =================== -->
+  <section id="about" class="about section-reveal">
+    <div class="section-container">
+      <div class="section-badge">Profil Renaldi Deva</div>
+      <h2 class="section-title">Mengenal Lebih Dekat</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Saya adalah mahasiswa program studi <strong>Teknologi Informasi</strong> di <strong>Universitas Jember</strong>. Saya memiliki minat dan kompetensi yang mendalam di bidang pengembangan perangkat lunak, pemrograman IoT (Internet of Things), serta desain grafis yang intuitif.
+          </p>
+          <p>
+            Saya sangat antusias untuk membangun karier profesional di industri teknologi, khususnya pada pengembangan <strong>Sistem Terintegrasi</strong>, <strong>Web Development</strong>, dan <strong>Solusi IoT</strong> yang inovatif.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Penghargaan</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Pengalaman Kerja</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-tags">
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+            <div>
+              <strong>Universitas Jember</strong>
+              <p>S1 Teknologi Informasi · 2024 – Sekarang</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <strong>Pesanggaran, Banyuwangi</strong>
+              <p>Jawa Timur, Indonesia</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="6"/><path d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
+            <div>
+              <strong>Minat Utama</strong>
+              <p>Programming · IoT · Desain Grafis · Robotics</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div>
+              <strong>Email</strong>
+              <p>renaldeva107@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== EDUCATION =================== -->
+  <section id="education" class="education section-reveal">
+    <div class="section-container">
+      <div class="section-badge">Jejak Akademis</div>
+      <h2 class="section-title">Riwayat Pendidikan &amp; Pencapaian</h2>
+      <div class="edu-layout">
+
+        <!-- Pendidikan -->
+        <div class="edu-column">
+          <h3 class="edu-col-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Pendidikan
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">Agu 2024 – Sekarang</span>
+                <h4>Universitas Jember</h4>
+                <p>S1 Teknologi Informasi · Jember, Indonesia</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2021 – 2023</span>
+                <h4>SMKS Muhammadiyah 8 Siliragung</h4>
+                <p>Rekayasa Perangkat Lunak · Banyuwangi, Indonesia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Penghargaan -->
+        <div class="edu-column">
+          <h3 class="edu-col-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Penghargaan
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot gold"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">11 Oktober 2025</span>
+                <h4>Juara 1 — ENERGY COMPETITION 2025</h4>
+                <p>Kompetisi tingkat nasional bidang energi dan teknologi</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot gold"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023</span>
+                <h4>Lulusan Terbaik Jurusan RPL</h4>
+                <p>SMKS Muhammadiyah 8 Siliragung · Rekayasa Perangkat Lunak</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== EXPERIENCE =================== -->
+  <section id="experience" class="experience section-reveal">
+    <div class="section-container">
+      <div class="section-badge">Karier Profesional</div>
+      <h2 class="section-title">Rekam Jejak &amp; Pengalaman</h2>
+      <div class="exp-grid">
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11m0 0a3 3 0 1 0 6 0M9 14h6m0 0V3"/></svg></div>
+            <div>
+              <h3>Asisten Laboratorium</h3>
+              <span class="exp-company">Lab Pertanian Cerdas — Universitas Jember</span>
+            </div>
+            <span class="exp-date">2025 – Sekarang</span>
+          </div>
+          <ul class="exp-list">
+            <li>Riset dan pengembangan IoT dalam bidang agroindustri</li>
+            <li>Mendukung pengembangan sistem pertanian cerdas berbasis sensor</li>
+          </ul>
+          <div class="exp-chips">
+            <span>IoT</span><span>Arduino</span><span>Riset</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+            <div>
+              <h3>Frontliner</h3>
+              <span class="exp-company">CV. Indorayaphone — Banyuwangi, Indonesia</span>
+            </div>
+            <span class="exp-date">Agu – Des 2023</span>
+          </div>
+          <ul class="exp-list">
+            <li>Mempromosikan produk HP lewat media internet dan brosur offline</li>
+            <li>Melayani customer dengan baik dan memberi arahan produk sesuai kebutuhan</li>
+            <li>Menawarkan produk fokus yang sedang diprioritaskan di toko</li>
+          </ul>
+          <div class="exp-chips">
+            <span>Marketing</span><span>Customer Service</span><span>Sales</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <div>
+              <h3>Digital Marketing</h3>
+              <span class="exp-company">CV. Putrikuning — Banyuwangi, Indonesia</span>
+            </div>
+            <span class="exp-date">Jun – Nov 2022</span>
+          </div>
+          <ul class="exp-list">
+            <li>Membuat postingan artikel di berbagai website (blogspot) untuk promosi</li>
+            <li>Membuat desain flyer postingan barang/jasa</li>
+            <li>Mengoptimalkan postingan agar cepat terindeks oleh Google</li>
+          </ul>
+          <div class="exp-chips">
+            <span>SEO</span><span>Desain Grafis</span><span>Content Writing</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SKILLS =================== -->
+  <section id="skills" class="skills section-reveal">
+    <div class="section-container">
+      <div class="section-badge">Keahlian Utama</div>
+      <h2 class="section-title">Keterampilan &amp; Penguasaan Teknologi</h2>
+      <div class="skills-layout">
+        <div class="skills-bars">
+          <h3 class="skills-subtitle">Bahasa Pemrograman</h3>
+          <div class="skill-item">
+            <div class="skill-label"><span>Python</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>C / C++</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>PHP</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>JavaScript</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Dart</span><span class="skill-pct">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>C# / Java</span><span class="skill-pct">60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>SQL</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+        </div>
+        <div class="skills-tech">
+          <h3 class="skills-subtitle">Software &amp; Tools</h3>
+          <div class="tech-grid">
+            <div class="tech-badge">VS Code</div>
+            <div class="tech-badge">Visual Studio</div>
+            <div class="tech-badge">Arduino IDE</div>
+            <div class="tech-badge">PostgreSQL</div>
+            <div class="tech-badge">Postman</div>
+            <div class="tech-badge">CorelDraw</div>
+            <div class="tech-badge">Canva</div>
+            <div class="tech-badge">IoT</div>
+            <div class="tech-badge">Robotics</div>
+            <div class="tech-badge">Git</div>
+            <div class="tech-badge">Web Dev</div>
+            <div class="tech-badge">Mobile Dev</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== PORTFOLIO =================== -->
+  <section class="portfolio" id="portfolio">
+    <div class="section-container">
+      <div class="section-badge">Portofolio Karya</div>
+      <h2 class="section-title">Proyek Unggulan yang Telah Dibangun</h2>
+      <div class="portfolio-grid section-reveal">
+
+        <div class="portfolio-card" id="card-aquasync">
+          <div class="card-image">
+            <img src="Assets/aquasync.png" alt="AquaSync Web App">
+            <div class="card-overlay">
+              <span class="card-tag">Web App</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>AquaSync</h3>
+            <p>Sistem Monitoring Kolam Lele Otomatis berbasis web untuk memantau kualitas air dan mempermudah pengelolaan kolam secara real-time.</p>
+            <div class="card-chips">
+              <span>Laravel</span><span>Monitoring</span><span>IoT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" id="card-earthcare">
+          <div class="card-image">
+            <img src="Assets/earthcare.jpg" alt="EarthCare Mobile App">
+            <div class="card-overlay">
+              <span class="card-tag">Mobile App</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>EarthCare</h3>
+            <p>Aplikasi mobile yang mengajak pengguna untuk berkontribusi menjaga kelestarian bumi dan lingkungan secara lebih interaktif.</p>
+            <div class="card-chips">
+              <span>Flutter</span><span>Environment</span><span>UI/UX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" id="card-robot">
+          <div class="card-image">
+            <img src="Assets/1.jpg" alt="Robot Transporter">
+            <div class="card-overlay">
+              <span class="card-tag">Robotics</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Robot Transporter</h3>
+            <p>Robot pengangkut otomatis yang digunakan untuk memindahkan barang secara efisien dengan bantuan sensor dan sistem navigasi cerdas.</p>
+            <div class="card-chips">
+              <span>Arduino</span><span>Sensor</span><span>Robotics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" id="card-kasihku">
+          <div class="card-image">
+            <img src="Assets/5.png" alt="Aplikasi Kasihku">
+            <div class="card-overlay">
+              <span class="card-tag">Software</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Aplikasi Kasihku</h3>
+            <p>Sistem kasir untuk UMKM tanaman hias yang membantu memudahkan transaksi dan maintenance stock secara real-time.</p>
+            <div class="card-chips">
+              <span>Python</span><span>MySQL</span><span>Desktop App</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" id="card-sistek">
+          <div class="card-image">
+            <img src="Assets/6.png" alt="Aplikasi SISTEK PANASEA">
+            <div class="card-overlay">
+              <span class="card-tag">Software</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Aplikasi SISTEK PANASEA</h3>
+            <p>Sistem apotek berbasis terminal untuk membuat layanan lebih efisien, mencetak struk otomatis, dan memudahkan pengelolaan stock obat.</p>
+            <div class="card-chips">
+              <span>Python</span><span>MySQL</span><span>CLI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SERTIFIKAT =================== -->
+  <section id="certificates" class="certificates section-reveal">
+    <div class="section-container">
+      <div class="section-badge">Validasi Kompetensi</div>
+      <h2 class="section-title">Sertifikat &amp; Penghargaan Resmi</h2>
+      <p class="section-subtitle">Bukti dedikasi dan pengakuan atas kompetensi yang telah saya kembangkan di berbagai bidang keahlian.</p>
+      <div class="cert-grid">
+
+        <div class="cert-card" id="cert-1">
+          <img src="Assets/sertifikat_energy.jpg" alt="Sertifikat Juara 1 ENERGY COMPETITION 2025" class="cert-img">
+          <div class="cert-body">
+            <h4>Juara 1 ENERGY COMPETITION 2025</h4>
+            <p class="cert-issuer">UPN "Veteran" Jawa Timur</p>
+            <p class="cert-date">11 Oktober 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card" id="cert-2" style="align-items: center; justify-content: center; min-height: 220px; text-align: center;">
+          <h4 style="color: var(--clr-muted); font-size: 1.3rem;">Coming Soon...</h4>
+        </div>
+
+        <div class="cert-card" id="cert-3" style="align-items: center; justify-content: center; min-height: 220px; text-align: center;">
+          <h4 style="color: var(--clr-muted); font-size: 1.3rem;">Coming Soon...</h4>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT =================== -->
+  <section id="contact" class="contact section-reveal">
+    <div class="section-container">
+      <div class="section-badge">Mari Berkolaborasi</div>
+      <h2 class="section-title">Hubungi Saya untuk Peluang Kerjasama</h2>
+      <p class="section-subtitle">Tertarik untuk mengembangkan ide bersama atau memiliki tawaran proyek? Jangan ragu untuk meninggalkan pesan!</p>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:renaldeva107@gmail.com">renaldeva107@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-wa">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16h1.19z"/></svg></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/6282237227464" target="_blank" rel="noopener">+62 822-3722-7464</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-linkedin">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://linkedin.com/in/renaldidevaandrianto" target="_blank" rel="noopener">renaldidevaandrianto</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-instagram">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+            <div>
+              <strong>Instagram</strong>
+              <a href="https://instagram.com/renalddva" target="_blank" rel="noopener">@renalddva</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <strong>Lokasi</strong>
+              <span>Pesanggaran, Banyuwangi, Jawa Timur</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="form-name">Nama</label>
+            <input type="text" id="form-name" name="name" placeholder="Nama lengkap Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input type="email" id="form-email" name="email" placeholder="email@contoh.com" required>
+          </div>
+          <div class="form-group">
+            <label for="form-message">Pesan</label>
+            <textarea id="form-message" name="message" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="btn-submit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Kirim Pesan
+          </button>
+          <div class="form-success" id="form-success">
+            Pesan berhasil dikirim! Saya akan segera membalas.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Renalddva<span class="logo-dot">.</span></div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/renaldeva" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.72.08-.71.08-.71 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.72-1.54-2.56-.29-5.26-1.28-5.26-5.71 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.07 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.6.24 2.78.12 3.07.74.81 1.18 1.84 1.18 3.1 0 4.44-2.71 5.42-5.28 5.7.41.36.77 1.08.77 2.18 0 1.58-.01 2.85-.01 3.24 0 .31.21.67.8.55A10.99 10.99 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/renaldidevaandrianto" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M8.34 17.34V10.66H5.67V17.34H8.34M7 9.5A1.34 1.34 0 1 0 7 6.82A1.34 1.34 0 0 0 7 9.5M18.33 17.34V13.83C18.33 11.65 17.71 10.5 15.73 10.5C14.55 10.5 13.8 11.15 13.5 11.73H13.47V10.66H10.9V17.34H13.57V14.12C13.57 13.12 13.74 12.15 14.95 12.15C16.15 12.15 16.17 13.26 16.17 14.18V17.34H18.33Z"/></svg>
+        </a>
+        <a href="https://instagram.com/renalddva" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2m0-2C3.47 0 0 3.47 0 7.75v8.5C0 20.53 3.47 24 7.75 24h8.5C20.53 24 24 20.53 24 16.25v-8.5C24 3.47 20.53 0 16.25 0h-8.5Z"/><path d="M12 7.25A4.75 4.75 0 1 1 7.25 12 4.76 4.76 0 0 1 12 7.25m0-2A6.75 6.75 0 1 0 18.75 12 6.76 6.76 0 0 0 12 5.25Z"/><circle cx="18.25" cy="5.75" r="1.25"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Renaldi Deva Andrianto. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
